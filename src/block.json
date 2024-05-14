@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocchi/barcode",
+	"version": "0.1.0",
+	"title": "Barcode block",
+	"icon": "feedback",
+	"category": "widgets",
+	"textdomain": "barcode",
+	"supports": {
+		"html": false,
+		"align": true,
+		"shadow": true,
+		"dimensions": {
+			"minHeight": true
+		}
+	},
+	"usesContext": [ "postId", "postType", "language" ],
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"render": "file:./render.php"
+}
